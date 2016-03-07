@@ -4,6 +4,9 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+
+
+  has_many :pins
 #forces strong passowrds
 	#validates :password, :presence => true,
 	          #:on => :create,
